@@ -24,7 +24,7 @@ app.use(async (ctx) => {
     }
 });
 
-function parsePostData(ctx) {
+function parsePostData (ctx) {
     return new Promise((resolve, reject) => {
         try {
             let postdata = '';
@@ -41,7 +41,7 @@ function parsePostData(ctx) {
     })
 }
 
-function parseQueryStr(queryStr) {
+function parseQueryStr (queryStr) {
     let queryData = {};
     let queryStrList = queryStr.split('&'); //字符串转数组
     console.log(queryStrList);
